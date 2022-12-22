@@ -73,4 +73,4 @@ def updateUser(id):
     return jsonify({'msg': 'User updated successfully!!'})
 
 if __name__ == '__main__':
-    app.run(debug=True)    
+    app.run(debug=True, host='0.0.0.0')    
