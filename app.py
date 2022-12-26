@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo, ObjectId
+from pymongo import MongoClient
 from flask_cors import CORS
 
 app = Flask(__name__)
 
 
-from pymongo import MongoClient
 
 client = MongoClient('mongodb+srv://amit:123@cluster0.immwx.mongodb.net/?retryWrites=true&w=majority')
 db = client.get_database('python_project')
